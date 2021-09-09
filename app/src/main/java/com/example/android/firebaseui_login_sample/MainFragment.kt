@@ -66,10 +66,7 @@ class MainFragment : Fragment() {
         }
 
         binding.settingsBtn.setOnClickListener {
-            
-// /*           findNavController().navigate(
-//                MainFragmentDi.actionMainFragmentToSettingsFragment()
-//            )*/
+            findNavController().navigate(R.id.settingsFragment)
         }
     }
 
