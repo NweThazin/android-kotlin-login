@@ -27,6 +27,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
+import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import com.example.android.firebaseui_login_sample.databinding.FragmentMainBinding
 import com.firebase.ui.auth.AuthUI
@@ -62,6 +63,13 @@ class MainFragment : Fragment() {
 
         binding.authButton.setOnClickListener {
             launchSignInFlow()
+        }
+
+        binding.settingsBtn.setOnClickListener {
+            
+// /*           findNavController().navigate(
+//                MainFragmentDi.actionMainFragmentToSettingsFragment()
+//            )*/
         }
     }
 
